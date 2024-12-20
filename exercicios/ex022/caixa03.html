@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @font-face {
+            font-family: "Titulo";
+            src: url(fonts/PoltawskiNowy-VariableFont_wght.ttf) format(TrueType);
+        }
+        @font-face {
+            font-family: "Font";
+            src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf)format(TrueType);
+        }
+        @font-face {
+            font-family: "italico";
+            src: url(fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+        }
+
+        body{
+            font-family: "Font", sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 15px rgb(175, 175, 175);
+        }
+
+        h1{
+            font-family: "Titulo", serif;
+            padding-left: 10px;   
+        }
+        
+        nav{
+            background-color: darkgray;
+            box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.363);
+        }
+        
+        nav > a{
+            color: black;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+            font-weight: bold;
+        }
+
+        .primeiro::before{
+            content: "⯌ ";
+            color: black;
+        }
+
+        .ultimo::after{
+            content: " ⯌";
+            color: black;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 15px rgb(175, 175, 175);
+
+        }
+        
+        #assuntos > p{
+            text-align: center;
+            background-color: darkgray;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        article > p{
+            text-align: justify;
+            text-indent: 8px;
+        }
+
+        article > aside{
+            font-family: "italico", sans-serif;
+            font-size: 0.9em;
+            text-align: right;
+            background-color: darkgray;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+            text-align: center; 
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        .negrito{
+                  color: black;
+                 text-decoration: none;
+                 font-weight: bold;
+        }
+
+        .negrito:hover{
+            text-decoration: underline;
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>O MEU PRIMEIRO SITE</h1>
+        <nav>
+            <a class="primeiro" href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a class="ultimo" href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Desporto Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre Portugal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe soluta reiciendis quos iure excepturi, officia enim minus cupiditate eveniet deserunt? A neque voluptatum alias officia nostrum excepturi et maxime animi?</p>
+                <p> Clica <a class="negrito" href="#">aqui</a> para veres a nossa newsletter semanal!</p>
+                <aside>Artigo escrito por João Da Silva</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por CursoEmVídeo</p>
+    </footer>
+</body>
+</html>

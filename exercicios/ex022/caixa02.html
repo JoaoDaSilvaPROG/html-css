@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+    @font-face {
+        font-family: "Open";
+        src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    }
+    @font-face {
+        font-family: "ITALICO";
+        src: url(fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    }
+        body{
+            font-family: "Open", sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        nav{
+            background-color: gray;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px 10px 15px 10px;
+            border-radius: 5px;
+        }
+
+        #assuntos{
+            background-color: rgb(211, 206, 206);
+            text-align: center;
+        }
+        
+        
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        article > p{
+            text-align: justify;
+        }
+
+        article > aside{
+            font-family: "ITALICO", sans-serif;
+            background-color: gray;
+            text-align: right;
+            padding-right: 5px;
+            
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+</header>
+<main>
+    <section id="assuntos">
+        <p>Desporto Politica Tecnologia</p>
+    </section>
+    <section id="noticias">
+        <article>
+        <h2>Notícia sobre Portugal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ad, eius libero in ullam voluptate perspiciatis, optio maxime itaque qui reiciendis laborum! Quaerat consequatur nostrum odio unde quisquam tenetur reprehenderit?</p>
+            <aside>Artigo escrito por João Da Silva</aside>
+        </article>
+    </section>
+</main>
+<footer>
+        <p>Desenvolvido pelo CursoEmVídeo</p>
+</footer>
+</body>
+</html>

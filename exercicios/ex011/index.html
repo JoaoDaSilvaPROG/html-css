@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir esse site em vários dispositivos diferentes ou simplesmente aumenta e diminui o tamanho do teu navegador.</p>
+<picture>
+    <source media="(max-width:750px)" srcset="imagens/foto.png" type="image/png">
+    <source media="(max-width:1050px)" srcset="imagens/fotom.png" type="image/png">
+    <img src="imagens/fotog.png" alt="Foto G">
+</picture>
+    <h1>Reprodução de Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+<ul>
+    <li>Coração - GROGNation</li> 
+    <br>
+    <audio controls>
+        <source src="midia/GROGNation X Sam The Kid - Coração.mp3" type="audio/mpeg">
+        <source src="midia/GROGNation X Sam The Kid - Coração.ogg" type="audio/ogg">
+        <p>O navegador nao suporta o respetivo audio. Faça o download <a href="midia/GROGNation X Sam The Kid - Coração.mp3"></a>aqui.</p>
+    </audio>
+    <li>Diogo Piçarra e Bispo - Monarquia</li>
+    <br>
+    <audio controls>
+        <source src="midia/Diogo Piçarra, Bispo - Monarquia.mp3" type="audio/mpeg">
+        <source src="midia/Diogo Piçarra, Bispo - Monarquia.ogg" type="audio/ogg">
+        <p>O navegador não suporta o respetivo audio. Faça o download <a href="midia/Diogo Piçarra, Bispo - Monarquia.mp3">aqui</a>.</p>
+    </audio>
+</ul>
+</body>
+</html>

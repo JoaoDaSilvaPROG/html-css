@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+
+    <style>
+        @font-face {
+            font-family: "Font";
+            src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+        }
+
+        body{
+            font-family: "Font", sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: rgb(52, 52, 248);
+            width: 250px;
+            text-align: center;
+            font-weight: 500;
+        }
+        div:hover{
+            color: rgb(52, 52, 248);
+        }
+    </style>
+
+</head>
+<body>
+   <h1>Exemplo de hover</h1>
+   <p>Passa o rato sobre o texto abaixo...</p>
+   <div>Sabes qual é o maior clube do mundo? &#x1F60F
+    <p>FUTEBOL CLUBE DO PORTO &#x1F499</p>
+   </div>
+</body>
+</html>
