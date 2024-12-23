@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        /*
+        AS DUAS MANEIRAS DE CENTRALIZAR CONTEUDO...
+        1: COM DISPLAY FLEX E ALIGN ITEMS CENTER E JUSTIFY-CONTENT CENTER!
+
+        2: USAR A POSITION RELATIVE NO CONTAINER E ABSOLUTE NO CONTENT, E JOGAR COM O TOP E LEFT!
+        */
+
+        #container{
+            background-color: blueviolet;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #content{
+            background-color: yellow;
+            height: 150px;
+            width: 300px;
+        }
+
+
+        #container2{
+            background-color: orange;
+            height: 400px;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        #content2{
+            background-color: cyan;
+            height: 150px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+ 
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="content">
+
+        </article>
+    </section>
+
+    <section id="container2">
+        <article id="content2">
+
+        </article>
+    </section>
+</body>
+</html>
