@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: rgba(211, 211, 211, 0.795);
+            font-weight: bold;
+            border-top: 1px;
+            border-right: 1px;
+            border-bottom: 0px;
+            border-left: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin-left: 100px;
+            margin-top: 50px;
+            
+        }
+
+        thead{
+            background-color: rgb(65, 65, 65);
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tfoot{
+            background-color: rgb(65, 65, 65);
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>
+            Lista de Distritos por Habitantes
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Distrito</th>
+                <th scope="col" style="width: 150px;">Nº Habitantes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>Lisboa</td>
+                <td class="num">2 301 904</td>
+            </tr>
+            <tr> 
+                <td>Porto</td>
+                <td class="num">1 819 515</td>
+            </tr>
+            <tr>
+                <td>Setúbal</td>
+                <td class="num">887 928</td>
+            </tr>
+            <tr>
+                <td>Braga</td>
+                <td class="num">854 416</td>
+            </tr>
+            <tr>
+                <td>Aveiro</td>
+                <td class="num">712 995</td>
+            </tr>
+            <tr>
+                <td> Faro</td>
+                <td class="num">472 000</td>
+            </tr>
+            <tr>
+                <td>Leiria</td>
+                <td class="num">467 139</td>
+            </tr>
+            <tr>
+                <td>Santarém</td>
+                <td class="num">433 782</td>
+            </tr>
+            <tr>
+                <td>Coimbra</td>
+                <td class="num">411 450</td>
+            </tr>
+            <tr>
+                <td>Viseu</td>
+                <td class="num">362 040</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Nº Total de Habitantes</th>
+                <td class="num">10 467 366</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

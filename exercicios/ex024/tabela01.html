@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;  
+        }
+
+        tr.amarela{
+            background-color: yellow;
+        }
+
+        tr.laranja{
+            background-color: orange;
+        }
+
+        tr.azul{
+            background-color: lightblue;
+        }
+
+        td.cinzento{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Minha primeira tabela
+    </h1>
+    <!-- HIERARQUIA TABELAS
+        TABLE ROW : LINHA DA TABELA
+        TABLE HEADER : CABEÇALHO DA TABELA
+        TABLE DATA : DADO DA TABELA-->
+    <table>
+        <tr class="amarela">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="laranja">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="azul">
+            <td class="cinzento">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
