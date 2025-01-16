@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pessoal</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form p{
+            line-height: 40px; 
+        }
+
+        form input{
+           
+            margin-left: 10px;
+        }
+
+        form input#enviar{
+            width: 80px;
+            padding: 5px;
+            font-weight: bold;
+           margin-top: 20px;
+           margin-left: 80px;
+           border: 1px solid black;
+        }
+
+        form input#enviar:hover{
+           background-color: rgb(200, 200, 200);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário Pessoal</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="iname">Nome</label>: <input type="text" name="name" id="iname">
+        </p>
+        
+        <p>
+            <label for="iidade">Idade</label>: <input type="text" name="idade" id="iidade">
+        </p>
+        
+        <p>
+            <label for="isexo">Sexo</label>: <input type="text" name="sexo" id="isexo">
+        </p>
+        
+        <p>
+            <label for="inacionalidade">Nacionalidade</label>: <input type="text" name="nacionalidade" id="inacionalidade">
+        </p>
+        
+        <p>
+            <label for="imorada">Morada</label>: <input type="text" name="morada" id="imorada">
+        </p>
+
+        <p>
+            <input id="enviar" type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
