@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form p{
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            Login
+        </h1>
+        <form action="registo.php" method="post" autocomplete="on">
+            <p>
+                <label for="iusuario">Usuário</label>: <input type="text" name="usuario" id="iusuario" required autocomplete="username" minlength="8" maxlength="16" size="12" placeholder="Nome do Usuário">
+            </p>
+            <p>
+                <label for="isenha">Palavra-passe</label>: <input type="password" name="senha" id="isenha" required autocomplete="current-password" minlength="8" maxlength="20" size="12" placeholder="Password">
+            </p>
+
+            <p>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="LIMPAR">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

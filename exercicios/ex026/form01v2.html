@@ -10,54 +10,45 @@
         }
 
         form p{
-            line-height: 40px; 
+            line-height: 35px;
         }
 
-        form input{
-           
-            margin-left: 10px;
+        form input.dados{
+            height: 15px;
+            margin-left: 5px;
         }
 
-        form input#enviar{
-            width: 80px;
-            padding: 5px;
+        form input#submit{
+            margin-left: 60px;
+            margin-top: 20px;
+            padding: 4px;
+            width: 100px;
             font-weight: bold;
-           margin-top: 20px;
-           margin-left: 80px;
-           border: 1px solid black;
         }
 
-        form input#enviar:hover{
-           background-color: rgb(200, 200, 200);
+        main{
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Formulário Pessoal</h1>
-    <form action="cadastro.php" autocomplete="off">
-        <p>
-            <label for="iname">Nome</label>: <input type="text" name="name" id="iname">
-        </p>
-        
-        <p>
-            <label for="iidade">Idade</label>: <input type="text" name="idade" id="iidade">
-        </p>
-        
-        <p>
-            <label for="isexo">Sexo</label>: <input type="text" name="sexo" id="isexo">
-        </p>
-        
-        <p>
-            <label for="inacionalidade">Nacionalidade</label>: <input type="text" name="nacionalidade" id="inacionalidade">
-        </p>
-        
-        <p>
-            <label for="imorada">Morada</label>: <input type="text" name="morada" id="imorada">
-        </p>
-
-        <p>
-            <input id="enviar" type="submit" value="Enviar">
-        </p>
-    </form>
+   <main>
+       <h1>Formulário Pessoal</h1>
+       
+       <form action="registos.php">
+       
+        <p><label for="inome">Nome</label>: <input class="dados" type="text" name="nome" id="inome"></p>
+       
+        <p><label for="iidade">Idade</label>: <input class="dados" type="text" name="idade" id="iidade"></p>
+       
+        <p><label for="isexo">Sexo</label>: <input class="dados" type="text" name="sexo" id="isexo"></p>
+       
+        <p><label for="ipais">País</label>: <input class="dados" type="text" name="pais" id="ipais"></p>
+       
+        <p><label for="imorada">Morada</label>: <input class="dados" type="text" name="morada" id="imorada"></p>
+       
+        <input id="submit" type="submit" value="Enviar">
+       </form>
+   </main>
 </body>
 </html>

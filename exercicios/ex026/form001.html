@@ -16,16 +16,20 @@
 </head>
 <body>
     <h1>O meu primeiro formulário</h1>
-    <form action="cadastro.php"  autocomplete="off">
+    <form action="registo.php" method="post"  autocomplete="off">
 
-        <!--O ACTION "CADASTRO.PHP" É O DOCUMENTO PARA ONDE O INPUT É ENVIADO DEPOIS DE CLICAR NO SUBMIT, QUE NESTE CASO É UM DOCUMENTO PHP, LINGUAGEM DE PROGRAMAÇÃO-->
+        <!--O METHOD "GET" FAZ COM QUE OS DADOS DO FORMULÁRIO APARECAM NA URL DA PÁGINA!  
+        O METHOD "POST" OCULTA OS DADOS DA URL, PORÉM SAO VISIVEIS ATRAVES DO DEVTOOLS (/NETWORK/PAYLOAD).
+        O GET É ACONSELHADO PARA FORMULÁRIOS BANAIS, ENQUANTO QUE O POST É UTLIZADO PARA FORMULÁRIOS QUE CONTEM DADOS PRIVADOS, COMO CC, CARTOES BANCARIOS, ETC...-->
+
+        <!--O ACTION "CADASTRO.PHP" É O DOCUMENTO PARA ONDE O INPUT (DADOS) É ENVIADO DEPOIS DE CLICAR NO SUBMIT, NESTE CASO É UM DOCUMENTO PHP, LINGUAGEM DE PROGRAMAÇÃO!-->
 
         <!--RELACIONAR O NOME COM O INPUT É IMPORTANTE PARA FACILITAR A LEITURA DO NAVEGADOR! 
-        PARA ISSO PRECISAMOS DE COLOCAR O ID ("INOME") DENTRO DO LABEL (FOR="INOME")-->
+        PARA ISSO PRECISAMOS DE COLOCAR O ID ("INOME") DENTRO DO LABEL (FOR="INOME")!-->
         
-        <p><label for="inome">Nome</label>: <input type="text" name="nome" id="inome"></p>
+        <p><label for="inome">Nome</label>: <input type="text" name="nome" id="inome" required></p>
         
-        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome" required></p>
         
         <p><input type="submit" value="ENVIAR"></p>
     </form>

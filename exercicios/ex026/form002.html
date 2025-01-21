@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form p{
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O meu primeiro Formulário</h1>
+    <form action="registo.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="isu">Usuário</label>: <input type="text" name="usu" id="isu" required minlength="8" maxlength="16" size="12" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        
+        <p>
+            <label for="ipass">Password</label>: <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" size="14" placeholder="Digite a sua Senha" autocomplete="current-password">
+        </p>
+
+        <input type="submit" value="ENVIAR">
+
+        <input type="reset" value="LIMPAR">
+    </form>
+
+    <!-- REQUIRED: O CAMPO DE PREENCHIMENTO É OBRIGATÓRIO, OS DADOS NAO SERÃO ENVIADOS SEM ESTAREM PREENCHIDOS!
+    
+    MIN-LENGTH: MINIMO DE CARACTERES OBRIGATORIAMENTE UTILIZADOS
+    
+    MAX-LENGTH: MAXIMO DE CARACTERES OBRIGATORIAMENTE UTILIZADOS
+    
+    SIZE: TAMANHO DA CAIXA (QUANDO ESTA FOR MENOR DO QUE O MAX-LENGTH, EXISTE UM PEQUENO ROLAMENTO DA CAIXA)
+    
+    PLACE-HOLDER: TEXTO PADRÃO ESCRITO DENTRO DA CAIXA ANTES DO PREENCHIMENTO, NORMALMENTE É UMA DICA ("DIGITE AQUI A SUA SENHA") -->
+</body>
+</html>
