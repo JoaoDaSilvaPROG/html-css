@@ -19,11 +19,28 @@
             <label for="inome">Nome:</label> <input type="text" name="nome" id="inome" autocomplete="name" required placeholder="Nome Completo">
         </p>
         <p>
-            <label for="imedia">Média:</label> <input type="number" name="media" id="imedia" required autocomplete="off" min="0" max="20" step="0.1">
+            <label for="inota">Nota obtida:</label> <input type="number" name="nota" id="inota" required autocomplete="off" min="0" max="20" step="0.1" placeholder="De 0 a 20">
+        </p>
+
+        <p>
+            <label for="imes">Mês da nota</label>: <input type="month" name="mes" id="imes" value="2025-01">
+        </p>
+
+        <p>
+            <label for="idata">Dia da Prova</label>: <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="ihora">Hora da Prova</label>: <input type="time" name="hora" id="ihora">
         </p>
 
             <input type="submit" value="ENVIAR">
             <input type="reset" value="LIMPAR">
     </form>
+
+    <!--MIN: VALOR MINIMO QUE PODEMOS USAR
+    MAX: VALOR MAXIMO POSSIVEL UTILIZAR
+    STEP: PASSO, DE QUANTO EM QUANTO A NOTA VAI MUDAR (0,1 /0,5 /1...)
+    VALUE: VALOR PREDEFINIDO PARA APARECER NA CAIXA, ANTES DE SER PREENCHIDA, UMA ESPÉCIE DE SUGESTAO-->
 </body>
 </html>
