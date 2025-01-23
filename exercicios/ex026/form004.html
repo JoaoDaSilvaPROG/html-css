@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        form p{
+            line-height: 30px;
+        }
+
+        fieldset legend{
+            font-weight: bold;
+            font-size: 1.1em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+        }
+
+        fieldset{
+            width: 400px;
+        }
+        fieldset form{
+            padding: 10px;
+            padding-top: 4px;
+        }
+
+        form input{
+            margin-left: 5px;
+        }
+
+        input#enviar{
+            margin-left: 235px;
+            margin-right: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="registo.php" autocomplete="on" method="post">
+
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </p>
+
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itel">Telemóvel</label>
+                <input type="tel" name="
+                tel" id="itel" required
+                pattern="^\(\d{3}\) \d{9}$" placeholder="(xxx) xxxxxxxxx" size="17">
+            </p>
+            <input id="enviar" type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </fieldset>
+</body>
+</html>
