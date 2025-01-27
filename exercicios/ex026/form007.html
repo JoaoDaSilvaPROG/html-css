@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        #imens{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="registo.php" autocomplete="on" method="post">
+
+        <p>
+            <label for="idistrito">Distrito:</label>
+            <select name="distrito" id="idistrito">
+                <option value="" selected>-- Escolha --</option>
+                <optgroup label="Região Norte">
+                <option value="VC">Viana do Castelo</option>
+                <option value="VI">Viseu</option>
+                <option value="BR">Braga</option>
+                <option value="PT">Porto</option>
+                </optgroup>
+                <optgroup label="Região Centro">
+                    <option value="LE">Leiria</option>
+                    <option value="LX">Lisboa</option>
+                    <option value="SA">Santarem</option>
+                    <option value="PO">Portalegre</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SE">Setubal</option>
+                    <option value="BE">Beja</option>
+                    <option value="FA">Faro</option>
+                    <option value="EV">Evora</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Polícia</option>
+                <option>Professor</option>
+                <option>Médico</option>
+                <option>Advogado</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imens">Mensagem:</label><br>
+            <textarea name="mens" id="imens"></textarea>
+        </p>
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+
+    </form>
+</body>
+</html>
